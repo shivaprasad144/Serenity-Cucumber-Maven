@@ -1,0 +1,241 @@
+"C:\Program Files\Java\jdk1.8.0_191\bin\java.exe" -Dmaven.multiModuleProjectDirectory=E:\Sample "-Dmaven.home=C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2021.3.2\plugins\maven\lib\maven3" "-Dclassworlds.conf=C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2021.3.2\plugins\maven\lib\maven3\bin\m2.conf" "-Dmaven.ext.class.path=C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2021.3.2\plugins\maven\lib\maven-event-listener.jar" "-javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2021.3.2\lib\idea_rt.jar=65308:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2021.3.2\bin" -Dfile.encoding=UTF-8 -classpath "C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2021.3.2\plugins\maven\lib\maven3\boot\plexus-classworlds-2.6.0.jar;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2021.3.2\plugins\maven\lib\maven3\boot\plexus-classworlds.license" org.codehaus.classworlds.Launcher -Didea.version=2021.3.2 clean verify -Dtags=@ValidCredentials
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -------------------------< org.example:sample >-------------------------
+[INFO] Building sample 1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ sample ---
+[INFO] Deleting E:\Sample\target
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ sample ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 0 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.10.1:compile (default-compile) @ sample ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- cucumber-jvm-parallel-plugin:5.0.0:generateRunners (generateRunners) @ sample ---
+[INFO] Adding E:\Sample\target\generated-test-sources\cucumber to test-compile source root
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ sample ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 5 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.10.1:testCompile (default-testCompile) @ sample ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 8 source files to E:\Sample\target\test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:3.0.0-M7:test (default-test) @ sample ---
+[INFO] Using auto detected provider org.apache.maven.surefire.junit4.JUnit4Provider
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running Parallel01IT
+[main] INFO io.cucumber.core.plugin.SerenityReporter - Running feature from classpath:features/Sample/LoginPage.feature
+[main] INFO  - 
+
+-------------------------------------------------------------------------------------
+     _______. _______ .______       _______ .__   __.  __  .___________.____    ____ 
+    /       ||   ____||   _  \     |   ____||  \ |  | |  | |           |\   \  /   / 
+   |   (----`|  |__   |  |_)  |    |  |__   |   \|  | |  | `---|  |----` \   \/   /  
+    \   \    |   __|  |      /     |   __|  |  . `  | |  |     |  |       \_    _/   
+.----)   |   |  |____ |  |\  \----.|  |____ |  |\   | |  |     |  |         |  |     
+|_______/    |_______|| _| `._____||_______||__| \__| |__|     |__|         |__|    
+                                                                                     
+ News and tutorials at http://www.serenity-bdd.info                                  
+ Documentation at https://wakaleo.gitbooks.io/the-serenity-book/content/             
+ Join the Serenity Community on Gitter: https://gitter.im/serenity-bdd/serenity-core 
+ Serenity BDD Support and Training at http://serenity-bdd.info/#/trainingandsupport  
+-------------------------------------------------------------------------------------
+
+[main] INFO  - Test Suite Started: Login to HRM
+[main] INFO io.cucumber.core.plugin.SerenityReporter - Running feature from classpath:features/Sample/LoginPage1.feature
+[main] INFO  - Test Suite Started: Login to HRM1
+[main] INFO io.cucumber.core.plugin.SerenityReporter - Running feature from classpath:features/Sample/LoginPage.feature
+[main] INFO  - Test Suite Started: Login to HRM
+[main] INFO io.cucumber.core.plugin.SerenityReporter - Running feature from classpath:features/Sample/LoginPage.feature
+[main] INFO  - 
+  _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
+ |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
+   | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
+   |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
+
+Login with valid credentials(login-to-hrm;login-with-valid-credentials)
+--------------------------------------------------------------------------------
+[main] INFO net.serenitybdd.core.webdriver.driverproviders.DriverProvider - Using automatically driver download
+[main] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 104.0.5112.79 (resolved driver for Chrome 104)
+[main] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\DELL\.cache\selenium\chromedriver\win32\104.0.5112.79\chromedriver.exe
+[main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
+[main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}
+Starting ChromeDriver 104.0.5112.79 (3cf3e8c8a07d104b9e1260c910efb8f383285dc5-refs/branch-heads/5112@{#1307}) on port 51903
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Aug 29, 2022 6:15:06 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected upstream dialect: W3C
+Aug 29, 2022 6:15:06 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Found exact CDP implementation for version 104
+[1661777122.004][SEVERE]: Timed out receiving message from renderer: 10.000
+[1661777122.007][WARNING]: screenshot failed, retrying timeout: Timed out receiving message from renderer: 10.000
+[1661777132.019][SEVERE]: Timed out receiving message from renderer: 10.000
+[1661777148.573][SEVERE]: Timed out receiving message from renderer: 10.000
+[1661777148.573][WARNING]: screenshot failed, retrying timeout: Timed out receiving message from renderer: 10.000
+[main] INFO  - 
+  _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
+ |_   _| | __| / __| |_   _|   | _ \   /_\   / __| / __| | __| |   \ 
+   | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
+   |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
+
+Login with valid credentials
+----------------------------------------------------------------------
+[main] INFO io.cucumber.core.plugin.SerenityReporter - Running feature from classpath:features/Sample/LoginPage1.feature
+[main] INFO  - Test Suite Started: Login to HRM1
+[main] INFO io.cucumber.core.plugin.SerenityReporter - Running feature from classpath:features/Sample/LoginPage1.feature
+[main] INFO  - 
+  _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
+ |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
+   | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
+   |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
+
+Login with valid credentials1(login-to-hrm1;login-with-valid-credentials1)
+--------------------------------------------------------------------------------
+[main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
+[main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}
+Starting ChromeDriver 104.0.5112.79 (3cf3e8c8a07d104b9e1260c910efb8f383285dc5-refs/branch-heads/5112@{#1307}) on port 52060
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Aug 29, 2022 6:15:59 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected upstream dialect: W3C
+Aug 29, 2022 6:15:59 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Found exact CDP implementation for version 104
+[1661777172.242][SEVERE]: Timed out receiving message from renderer: 10.000
+[1661777172.242][WARNING]: screenshot failed, retrying timeout: Timed out receiving message from renderer: 10.000
+[1661777182.254][SEVERE]: Timed out receiving message from renderer: 10.000
+[1661777198.430][SEVERE]: Timed out receiving message from renderer: 10.000
+[1661777198.431][WARNING]: screenshot failed, retrying timeout: Timed out receiving message from renderer: 10.000
+[main] INFO  - 
+  _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
+ |_   _| | __| / __| |_   _|   | _ \   /_\   / __| / __| | __| |   \ 
+   | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
+   |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
+
+Login with valid credentials1
+----------------------------------------------------------------------
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 118.367 s - in Parallel01IT
+[INFO] Running Parallel02IT
+[main] INFO io.cucumber.core.plugin.SerenityReporter - Running feature from classpath:features/Sample/LoginPage.feature
+[main] INFO  - Test Suite Started: Login to HRM
+[main] INFO io.cucumber.core.plugin.SerenityReporter - Running feature from classpath:features/Sample/LoginPage1.feature
+[main] INFO  - Test Suite Started: Login to HRM1
+[main] INFO io.cucumber.core.plugin.SerenityReporter - Running feature from classpath:features/Sample/LoginPage.feature
+[main] INFO  - Test Suite Started: Login to HRM
+[main] INFO io.cucumber.core.plugin.SerenityReporter - Running feature from classpath:features/Sample/LoginPage.feature
+[main] INFO  - 
+  _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
+ |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
+   | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
+   |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
+
+Login with valid credentials(login-to-hrm;login-with-valid-credentials)
+--------------------------------------------------------------------------------
+[main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
+[main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}
+Starting ChromeDriver 104.0.5112.79 (3cf3e8c8a07d104b9e1260c910efb8f383285dc5-refs/branch-heads/5112@{#1307}) on port 53190
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Aug 29, 2022 6:16:57 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected upstream dialect: W3C
+Aug 29, 2022 6:16:57 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Found exact CDP implementation for version 104
+[1661777230.708][SEVERE]: Timed out receiving message from renderer: 10.000
+[1661777230.708][WARNING]: screenshot failed, retrying timeout: Timed out receiving message from renderer: 10.000
+[1661777240.715][SEVERE]: Timed out receiving message from renderer: 10.000
+[1661777256.922][SEVERE]: Timed out receiving message from renderer: 10.000
+[1661777256.923][WARNING]: screenshot failed, retrying timeout: Timed out receiving message from renderer: 10.000
+[main] INFO  - 
+  _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
+ |_   _| | __| / __| |_   _|   | _ \   /_\   / __| / __| | __| |   \ 
+   | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
+   |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
+
+Login with valid credentials
+----------------------------------------------------------------------
+[main] INFO io.cucumber.core.plugin.SerenityReporter - Running feature from classpath:features/Sample/LoginPage1.feature
+[main] INFO  - Test Suite Started: Login to HRM1
+[main] INFO io.cucumber.core.plugin.SerenityReporter - Running feature from classpath:features/Sample/LoginPage1.feature
+[main] INFO  - 
+  _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
+ |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
+   | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
+   |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
+
+Login with valid credentials1(login-to-hrm1;login-with-valid-credentials1)
+--------------------------------------------------------------------------------
+[main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
+[main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}
+Starting ChromeDriver 104.0.5112.79 (3cf3e8c8a07d104b9e1260c910efb8f383285dc5-refs/branch-heads/5112@{#1307}) on port 50806
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Aug 29, 2022 6:17:47 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected upstream dialect: W3C
+Aug 29, 2022 6:17:47 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Found exact CDP implementation for version 104
+[1661777280.513][SEVERE]: Timed out receiving message from renderer: 10.000
+[1661777280.513][WARNING]: screenshot failed, retrying timeout: Timed out receiving message from renderer: 10.000
+[1661777290.520][SEVERE]: Timed out receiving message from renderer: 10.000
+[1661777307.115][SEVERE]: Timed out receiving message from renderer: 10.000
+[1661777307.116][WARNING]: screenshot failed, retrying timeout: Timed out receiving message from renderer: 10.000
+[main] INFO  - 
+  _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
+ |_   _| | __| / __| |_   _|   | _ \   /_\   / __| / __| | __| |   \ 
+   | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
+   |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
+
+Login with valid credentials1
+----------------------------------------------------------------------
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 101.869 s - in Parallel02IT
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ sample ---
+[INFO] Building jar: E:\Sample\target\sample-1.0-SNAPSHOT.jar
+[INFO] 
+[INFO] --- serenity-maven-plugin:3.3.1:aggregate (serenity-reports) @ sample ---
+[INFO] Test results for 2 tests generated in 1.6 secs in directory: file:/E:/Sample/target/site/serenity/
+[INFO] -----------------------------------------
+[INFO]  SERENITY TESTS: SUCCESS
+[INFO] -----------------------------------------
+[INFO] | Test cases executed    | 2
+[INFO] | Tests executed         | 2
+[INFO] | Tests passed           | 2
+[INFO] | Tests failed           | 0
+[INFO] | Tests with errors      | 0
+[INFO] | Tests compromised      | 0
+[INFO] | Tests aborted          | 0
+[INFO] | Tests pending          | 0
+[INFO] | Tests ignored/skipped  | 0
+[INFO] ------------------------ | --------------
+[INFO] | Total Duration         | 1m 38s
+[INFO] | Fastest test took      | 48s 571ms
+[INFO] | Slowest test took      | 49s 676ms
+[INFO] -----------------------------------------
+[INFO] 
+[INFO] SERENITY REPORTS
+[INFO]   - Full Report: file:///E:/Sample/target/site/serenity/index.html
+[INFO]   - Single Page HTML Summary: file:///E:/Sample/target/site/serenity/serenity-summary.html
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  04:30 min
+[INFO] Finished at: 2022-08-29T18:18:45+05:30
+[INFO] ------------------------------------------------------------------------
+
+Process finished with exit code 0
