@@ -20,4 +20,4 @@ Since I am using serenity reports with aggregate option, reports will show corre
 
 Please help and resolve the issue. 
 
-
+Please refer console log.txt for better understanding.
